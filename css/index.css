@@ -193,8 +193,9 @@ footer {
 }
 @media (max-width: 500px) {
   .home .intro img {
-    border-radius: 5%;
+    border-radius: 10px;
     padding: 0 0%;
+    width: 100%;
   }
 }
 .home .space-images {
@@ -237,7 +238,11 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
-  flex-direction: column-reverse;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
@@ -263,7 +268,7 @@ footer {
   border-radius: 10px;
   color: #F6F7F8;
 }
-.home .walk .walk-text button *:hover {
+.home .walk .walk-text button:hover {
   background-color: #F6F7F8;
   color: #22283A;
 }
@@ -279,6 +284,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-img {
     width: 100%;
+    margin-left: 0;
   }
 }
 .home .walk .walk-img img {
